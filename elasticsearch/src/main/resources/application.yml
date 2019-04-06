@@ -1,0 +1,4 @@
+es:
+  host: 127.0.0.1:9300
+  cluster:
+    name: my-es

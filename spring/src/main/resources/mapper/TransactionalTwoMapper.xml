@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Ihnsod.spring.mapper.transactional.TransactionalTwoMapper">
+    <insert id="transactionalOne" parameterType="com.Ihnsod.spring.pojo.transactional.TransactionalTwo">
+        INSERT INTO transactional_one (`name`) VALUE (#{trans.name});
+    </insert>
+
+    <insert id="transactionalTwo" parameterType="com.Ihnsod.spring.pojo.transactional.TransactionalTwo">
+        INSERT INTO transactional_one (`name`) VALUE (#{trans.name});
+    </insert>
+
+    <insert id="transactionalThree" parameterType="com.Ihnsod.spring.pojo.transactional.TransactionalTwo">
+        INSERT INTO transactional_one (`name`) VALUE (#{trans.name});
+    </insert>
+</mapper>
